@@ -146,7 +146,3 @@ class VendorSerializer(serializers.ModelSerializer):
         subject = "Your Vendor Account Details"
         message = f"Welcome! Here are your login credentials:\n\nTemporary Password: {password}\n\nPlease log in and change your password."
         send_mail(subject, message, "no-reply@example.com", [to_email])
-
-
-class ProductSerializer(serializers.ModelSerializer):
-    pass
