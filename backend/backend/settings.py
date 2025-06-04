@@ -156,6 +156,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
+LOGGING = {
+    "version": 1,
+    "handlers": {"console": {"class": "logging.StreamHandler"}},
+    "root": {
+        "handlers": ["console"],
+        "level": "INFO",
+    },
+}
+
+
 LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "UTC"
